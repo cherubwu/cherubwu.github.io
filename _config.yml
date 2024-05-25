@@ -1,26 +1,48 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+# Build settings
+markdown:             kramdown
+kramdown:
+  input:              GFM
+  hard_wrap:          false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class:  'highlight' # use existing pygments syntax highlighting css
+  footnote_backlink:  "⤴"
+highlighter:          pygments
+excerpt_separator:    <!-- excerpt-end -->
+mathjax:              true
+
+# Add journals (similar with posts)
+collections:
+  journals:
+    output: true
 
 # Permalinks
-permalink:        pretty
-relative_permalinks: true
+permalink:            pretty
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+title:                凱達的个人主页
+description-1:        '譬大道之在天下猶川谷之於江海'
+description-2:        'Eventually, all things merge into one, and a river runs through it.'
+baseurl:              https://cherubwu.github.io/
+github_username:      cherubwu
+
+include: ["_pages", "_posts", "_journals"]
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-target-blank
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:               'Cherub Wu'
+  url:                https://https://www.instagram.com/cherainboow
 
-paginate:         5
+paginate:             5
 
 # Custom vars
-version:          2.1.0
+version:              1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:               https://github.com/cherubwu/cherubwu.github.io
