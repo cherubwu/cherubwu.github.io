@@ -1,30 +1,15 @@
 ---
 layout: page
-title: About
+title: Cherainboow 
 ---
 
 <p class="message">
-  Howdy 
-</p>
+🥕
+I’m Cherub, a neuroscience enthusiast and multifaceted creative. My journey is all about blending the wonders of science with the beauty of art to explore, understand, and express the intricate nature of the world.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I am passionate about using art as a means to see the world and science as a way to color nature. Through this multimedia website, I aim to inspire others to dream, imagine, and connect with the world around them in new and profound ways.
 
-There are currently two themes built on Poole:
+My primary passions lie in painting, historical exploration, and creative daydreaming. These pursuits allow me to merge scientific inquiry with artistic vision, creating works that are both thought-provoking and visually captivating.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+I’d love to collaborate with you to craft a vision and bring it to life, using the unique perspectives of art and science to illuminate the wonders of our existence!
 
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
