@@ -26,8 +26,8 @@
         {% endif %}
       {% endfor %}
 
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">CherainboowARTs</a>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">CherainboowSCIENCES</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">CherainboowARTs</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">CherainboowSCIENCEs</a>
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
 
