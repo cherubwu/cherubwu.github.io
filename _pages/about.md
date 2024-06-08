@@ -18,23 +18,23 @@ title: About Cherub🥕
 ### 🌄 Nature-Earth🌍 Biosphere 🌊<br>
 中国的景色都像覆盖了一层水墨画的🌫️薄雾绵绵不断的挥洒在宣纸上<br>
 欧美的景色都像饱和度大于60%的蛋彩油画厚厚(Impasto)的涂抹在亚麻布上<br>
-Play
-Copy to Clipboard
 <blockquote cite="https://www.poetryfoundation.org/poems/43650/auguries-of-innocence">
   <p>To see a World in a Grain of Sand <br>
-  And a Heaven in a Wild Flower,<br>
-  Hold Infinity in the palm of your hand And Eternity in an hour.🏜️🌻🪬⏳<br>
+  And a Heaven in a Wild Flower<br>
+  Hold Infinity in the palm of your hand<br>
+  And Eternity in an hour.🏜️🌻🪬⏳<br>
   </p>
   <footer>—William Blake, <cite>Auguries of Innocence</cite></footer>
-</blockquote>
+</blockquote><br>
 
 ### Physic World 🌠📚 <br>
-Behind the clock--Einstein time theory "Relativity theory"
+Behind the clock--Einstein time theory "Relativity theory" <br>
 
-> General 
-> Special  
+* General<br> 
+* Special<br>  
 
+<div class="message"> 
 Bob Dylan once said I think the truly natural things are dreams which nature can’t touch with decay?
-在物理世界中时间是单方向地朝着未来流动，而在精神世界中通过回忆是可以回到过去的。---Cherub (under reviewing)
+在物理世界中时间是单方向地朝着未来流动，而在精神世界中通过回忆是可以回到过去的。---Cherub (under reviewing)</div><br>
 
-### Human Mind 
+### Human Mind 🧠💭🤯<br>
