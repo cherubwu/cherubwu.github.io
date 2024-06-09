@@ -3,13 +3,14 @@ layout: page
 title: About Cherub🥕
 ---
 
-![cherub](/illustrations/cherub.png){:class="img-responsive"}
+![cherub](/public/image/cherub.png){:class="img-responsive"}
 <p style="text-align:left;color:rebeccapurple;font-size:100%;">
-<strong>Why I believe in using "Art" 🎨 to see the World 🌍</strong> <br>
+<strong>Why I believe in using "Art" 🎨 to see the World 🌍</strong><br>
 </p>
 <p style="text-align:left;color:gray;font-size:100%;">
-### Painting🖼️<br>
+### Painting 🖼️<br>
 画家的作品是一种用最独特和最灵敏的嗅觉去展现一个人类的感情表达，如personal的感触和一段经历，的一段历史，一段虚无缥缈的幻想.更如所谓的画家需要比正常人更加具备发达的感知能力，像狮群中的guard。而作品不仅定格了一个特定的时刻和场景，甚至定格了那时那刻的氛围，一切物质中可以揭示的故事。<br>
+
 <em>The artist's work is a way to showcase human emotional expression with the most unique and sensitive perception, such as personal feelings and experiences, a segment of history, and an ethereal fantasy. Furthermore, it is said that an artist needs to have a more developed sense of perception than ordinary people, like a guard in a pride of lions. The artwork not only captures a specific moment and scene but also freezes the atmosphere of that time and place, revealing the stories embedded in all material things.</em><br>
 
 ### Movie and TV series (A.K.A opera in the old days) 🎭<br>
@@ -29,7 +30,7 @@ title: About Cherub🥕
   <p>To see a World in a Grain of Sand <br>
   And a Heaven in a Wild Flower<br>
   Hold Infinity in the palm of your hand<br>
-  And Eternity in an hour.🏜️🌻🪬⏳<br>
+  And Eternity in an hour🏜️🌻🪬⏳<br>
   </p>
   <footer>—William Blake, <cite>Auguries of Innocence</cite></footer>
 </blockquote><br>
@@ -45,10 +46,10 @@ Bob Dylan once said I think the truly natural things are dreams which nature can
 在物理世界中时间是单方向地朝着未来流动，而在精神世界中通过回忆是可以回到过去的。---Cherub (under reviewing)</div><br>
 
 ### Human Mind 🧠💭🤯<br>
-Pop quiz fire philosophy questions! Answer this first and we’ll have a chat about it!
-* Does GOD exist?
-* Do we have free will?
-* Is morality objective?
-* Are other animals conscious?
+Pop quiz-fire philosophy questions in 30 sec! Answer this first and we’ll have a chat about it!<br>
+* Does GOD exist?<br>
+* Do we have free will?<br>
+* Is morality objective?<br>
+* Are other animals conscious?<br>
 </p>
 
