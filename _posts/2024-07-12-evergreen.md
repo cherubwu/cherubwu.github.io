@@ -17,7 +17,7 @@ Golden-bronze and brown is all that can be seen. 🍂🍁
 
 ## 🎵 Click on and Listen to This Song Along ur scrolling 
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2hdNya0b6Cc2YJ8IyaQIWp?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2hdNya0b6Cc2YJ8IyaQIWp?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ![Everygreen](/public/image/Evergreen.JPG){:class="img-responsive"}
 <p style="text-align:center;color:gray;font-size:100%;">
@@ -25,15 +25,14 @@ Golden-bronze and brown is all that can be seen. 🍂🍁
 </p>
 
 *Janary 2024 Cherub*
-
-My eye blinks when solitude's a door, 🚪
-A rabbit hole behind the clock's decor. 🕰️🐇
-With rose-red cheeks and fire of love, 🌹
+My eye blinks when solitude's a door, 🚪  
+A rabbit hole behind the clock's decor. 🕰️🐇  
+With rose-red cheeks and fire of love, 🌹  
 A cloud of pride, like wings above. 🕊️
 
-Which oft doth dark Her goodly light, 🌑
-With smiles, she dries away the night.🌟
-The rest are nature’s wonderment, ✨
+Which oft doth dark Her goodly light, 🌑  
+With smiles, she dries away the night.🌟  
+The rest are nature’s wonderment, ✨  
 But this, the heart’s astonishment. 💖
 
 ![fm](/public/image/fm.png){:class="img-responsive"}
