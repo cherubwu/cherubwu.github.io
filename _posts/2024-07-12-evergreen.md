@@ -24,14 +24,14 @@ Golden-bronze and brown is all that can be seen. 🍂🍁
 <br>桂🌿✨*Laurus nobilis* -- Cherainboow🥕
 </p>
 
- *January 2024 Cherub*
+*January 2024 Cherub*
 
 My eye blinks when solitude's a door, 🚪  
 A rabbit hole behind the clock's decor. 🕰️🐇  
 With rose-red cheeks and fire of love, 🌹  
 A cloud of pride, like wings above. 🕊️
 
-Which oft doth dark Her goodly light, 🌑 
+Which oft doth dark Her goodly light, 🌑  
 With smiles, she dries away the night.🌟  
 The rest are nature’s wonderment, ✨  
 But this, the heart’s astonishment. 💖
