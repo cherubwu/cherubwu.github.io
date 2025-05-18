@@ -6,7 +6,7 @@ title: "About Cherub🥕"
 <img src="/public/image/cherub.png" alt="cherub" style="max-width: 100%; height: auto;" />
 
 <p>
-🇨🇳👩.[🐨] and cared by <a href="https://xyxj1024.github.io" target="_blank">🇨🇳🧑</a>.<br>
+🇨🇳👩.🐨 and cared by <a href="https://xyxj1024.github.io" target="_blank">🇨🇳🧑</a>.<br>
 </p>
 
 <p style="text-align:left; color:rebeccapurple; font-size:100%;">
