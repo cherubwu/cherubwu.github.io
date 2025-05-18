@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "About Cherub🥕"
-permalink: /about/
 ---
 
 <img src="/public/image/cherub.png" alt="cherub" style="max-width: 100%; height: auto;" />
