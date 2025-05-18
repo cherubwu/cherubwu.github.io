@@ -5,6 +5,10 @@ title: "About Cherub🥕"
 
 <img src="/public/image/cherub.png" alt="cherub" style="max-width: 100%; height: auto;" />
 
+<p>
+🇨🇳👩.[🐨] and cared by <a href="https://xyxj1024.github.io" target="_blank">🇨🇳🧑</a>.<br>
+</p>
+
 <p style="text-align:left; color:rebeccapurple; font-size:100%;">
 <strong>Why I believe in using "Art" 🎨 to see the World 🌍</strong><br>
 </p>
@@ -26,7 +30,7 @@ title: "About Cherub🥕"
 <hr>
 
 <p style="text-align:left; color:gray; font-size:100%;">
-<b>🧬 "Science" to Color Nature 🌌</b><br><br>
+<strong> And🧬 "Science" to Color Nature 🌌</strong><br><br>
 <b>🌄 Nature–Earth 🌍 Biosphere 🌊</b><br><br>
 中国的景色都像覆盖了一层水墨画的🌫️，薄雾绵绵不断地挥洒在宣纸上。<br>
 欧美的景色都像饱和度大于 60% 的蛋彩油画厚厚（<i>Impasto</i>）地涂抹在亚麻布上。
