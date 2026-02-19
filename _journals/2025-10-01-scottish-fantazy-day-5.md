@@ -46,5 +46,5 @@ marquise with pear and lemon sorbet.**
 
 ------------------------------------------------------------------------
 
-[← Day 4](/journal/2025/10/01/day-4) · [Back to Book
-Cover](/journal/2025/10/01)
+[← Day 4](/journal/2025/10/01/day-4) · [Next → Day
+6](/journal/2025/10/01/day-6)
