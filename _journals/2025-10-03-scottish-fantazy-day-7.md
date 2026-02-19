@@ -33,6 +33,7 @@ Then the real storm came. By the time we reached our “top-rated” restaurant,
 
 That night, the wind howled like an orchestra outside. We curled up, watched *The Addams Family,* and let the storm play its gothic symphony.\
 A spooky, cozy night --- perfectly us. 💋🌧️
+
 ------------------------------------------------------------------------
 
 [← Day 6](/journal/2025/10/01/day-6) · [Next → Day

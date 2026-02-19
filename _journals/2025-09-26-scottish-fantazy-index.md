@@ -1,5 +1,5 @@
 ---
-description: Scottish Fantazy
+description: Scottish Fantazy Bookcover
 layout: journal
 permalink: /journal/2025/10/01
 tags: Scotland-life

@@ -6,8 +6,9 @@ tags: Scotland-life
 title: October, 2025 --- Day 5
 ---
 
-[← Day 4](/journal/2025/10/01/day-4) · [Back to Book
-Cover](/journal/2025/10/01)
+[← Day 4](/journal/2025/10/01/day-4) · [Next → Day
+6](/journal/2025/10/01/day-6)
+
 
 # ✨ *Scottish Fantazy*
 
