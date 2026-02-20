@@ -1,37 +1,34 @@
 # Build settings
-# Build settings
-markdown: kramdown
+markdown:             kramdown
 kramdown:
-  input: GFM
-  hard_wrap: false
+  input:              GFM
+  hard_wrap:          false
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    css_class: "highlight"
+    css_class:  'highlight' # use existing pygments syntax highlighting css
+  footnote_backlink:  "⤴"
+highlighter:          pygments
+excerpt_separator:    <!-- excerpt-end -->
+mathjax:              true
 
-mathjax: true
-permalink: pretty
-paginate: 5
-
-# Site identity
-title: "凱達的个人主页"
-tagline: "Cherub’s Little Wonderland"
-description: "Eventually, all things merge into one, and a river runs through it."
-
-# IMPORTANT: user site => baseurl should be empty
-baseurl: ""
-
-github_username: cherubwu
-
-# Collections
+# Add journals (similar with posts)
 collections:
   journals:
     output: true
 
-include:
-  - _pages
-  - _posts
-  - _journals
+# Permalinks
+permalink:            pretty
 
+# Setup
+title:                凱達的个人主页
+description-1:        '譬大道之在天下猶川谷之於江海'
+description-2:        'Eventually, all things merge into one, and a river runs through it.'
+baseurl:              https://cherubwu.github.io/
+github_username:      cherubwu
+
+include: ["_pages", "_posts", "_journals"]
+
+# Gems
 plugins:
   - jekyll-gist
   - jekyll-paginate
@@ -39,10 +36,13 @@ plugins:
   - jekyll-target-blank
 
 author:
-  name: "Cherub Wu"
-  url: "https://www.instagram.com/cherainboow"
+  name:               'Cherub Wu'
+  url:                https://https://www.instagram.com/cherainboow
 
-version: "1.0"
+paginate:             5
+
+# Custom vars
+version:              1.0
 
 github:
-  repo: "https://github.com/cherubwu/cherubwu.github.io"
+  repo:               https://github.com/cherubwu/cherubwu.github.io
