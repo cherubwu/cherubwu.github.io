@@ -25,23 +25,33 @@ permalink: /arts/
   padding: 0 0 4rem;
 }
 
-/* ── Hero ── */
+/* ── Hero — full-bleed illustration background ── */
 .arts-hero {
-  background: var(--m-beige);
+  position: relative;
   border: 3px solid var(--ink);
   box-shadow: 8px 8px 0 var(--ink);
   margin-bottom: 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  align-items: center;
   overflow: hidden;
-  min-height: 280px;
+  background: #f5f0eb;
+  min-height: 320px;
+}
+.arts-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  pointer-events: none;
 }
 .arts-hero-text {
+  position: relative;
+  z-index: 2;
   padding: 2.4rem 2rem 2.4rem 2.4rem;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  max-width: 360px;
 }
 .arts-eyebrow {
   font-size: 0.6rem;
@@ -83,23 +93,6 @@ permalink: /arts/
 .arts-hero-cta:hover {
   transform: translate(-2px,-2px);
   box-shadow: 6px 6px 0 var(--m-rose);
-}
-.arts-hero-img {
-  height: 280px;
-  overflow: hidden;
-  border-left: 3px solid var(--ink);
-  background: #f5f0eb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.arts-hero-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: left center;
-  mix-blend-mode: multiply;
-  background: #f5f0eb;
 }
 
 /* ── Section label ── */
@@ -207,8 +200,8 @@ permalink: /arts/
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
-  .arts-hero { grid-template-columns: 1fr; }
-  .arts-hero-img { border-left: none; border-top: 3px solid var(--ink); height: 200px; }
+  .arts-hero { min-height: 240px; }
+  .arts-hero-text { max-width: 100%; background: rgba(245,240,235,0.75); }
 }
 </style>
 
@@ -216,14 +209,12 @@ permalink: /arts/
 
   <!-- Hero -->
   <div class="arts-hero">
+    <img class="arts-hero-bg" src="/public/image/hero-arts.png" alt="" />
     <div class="arts-hero-text">
       <span class="arts-eyebrow">— Visual Portfolio</span>
       <h1>Cherainboow<br><span>ARTs</span></h1>
       <p class="arts-hero-sub">Painting · Photography · Visual Storytelling</p>
       <a class="arts-hero-cta" href="https://www.instagram.com/cherainboow" target="_blank">↗ Instagram</a>
-    </div>
-    <div class="arts-hero-img">
-      <img src="/public/image/hero-arts.png" alt="Cherainboow Arts" />
     </div>
   </div>
 
