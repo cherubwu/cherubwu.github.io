@@ -21,9 +21,10 @@ permalink:            pretty
 
 # Setup
 title:                凱達的个人主页
-description-1:        '譬大道之在天下猶川谷之於江海'
-description-2:        'Eventually, all things merge into one, and a river runs through it.'
-baseurl:              https://cherubwu.github.io/
+description:          'Eventually, all things merge into one, and a river runs through it.'
+tagline:              '譬大道之在天下猶川谷之於江海'
+baseurl:              ''
+url:                  'https://cherubwu.github.io'
 github_username:      cherubwu
 
 include: ["_pages", "_posts", "_journals"]
@@ -37,7 +38,7 @@ plugins:
 
 author:
   name:               'Cherub Wu'
-  url:                https://https://www.instagram.com/cherainboow
+  url:                https://www.instagram.com/cherainboow
 
 paginate:             5
 
