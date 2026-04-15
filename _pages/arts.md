@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "CherainboowARTs"
-nav_order: 1
+permalink: /arts/
 ---
 
 <style>
