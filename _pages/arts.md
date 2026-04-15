@@ -16,149 +16,148 @@ permalink: /arts/
   --m-lav:    #A89BB0;
   --m-warm:   #B5AFA8;
   --ink:      #2C2C2C;
-  --dark:     #0d0d0d;
+  /* Candy colors */
+  --candy-pink:   #FF6EB4;
+  --candy-cyan:   #3DD9DC;
+  --candy-yellow: #FFE44D;
+  --candy-mint:   #5CEFC7;
+  --candy-lav:    #C084FC;
 }
 
 .arts-page {
   font-family: "PT Sans", sans-serif;
   color: var(--ink);
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 0 4rem;
 }
 
 /* ── Hero ── */
 .arts-hero {
-  background: var(--dark);
-  border: 3px solid #333;
-  box-shadow: 8px 8px 0 #333;
+  position: relative;
+  background: #0d0d0d;
+  border: 3px solid #1a1a1a;
+  box-shadow: 8px 8px 0 #1a1a1a;
   margin-bottom: 2.5rem;
   overflow: hidden;
-  position: relative;
+  min-height: 360px;
 }
-.arts-hero-illus {
-  display: block;
+
+/* Full illustration as background */
+.arts-hero-bg {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
-  mix-blend-mode: multiply;
-  filter: saturate(1.35) contrast(1.05);
-  position: relative;
-  z-index: 1;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
-/* ── Poster title overlay ── */
+/* Dark gradient only on left-bottom so title is readable */
+.arts-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10,10,10,0.72) 0%,
+    rgba(10,10,10,0.4) 40%,
+    rgba(10,10,10,0.0) 65%
+  ),
+  linear-gradient(
+    to top,
+    rgba(10,10,10,0.7) 0%,
+    rgba(10,10,10,0.1) 40%,
+    transparent 70%
+  );
+}
+
+/* Title pinned to bottom-left */
 .arts-poster {
-  background: var(--dark);
-  padding: 1.6rem 2rem 2rem;
-  position: relative;
-  z-index: 2;
-  border-top: 2px solid #222;
+  position: absolute;
+  bottom: 1.6rem;
+  left: 1.8rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
-.arts-poster-line {
-  display: block;
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-.arts-poster-line:last-child { margin-bottom: 0; }
 
-/* ── Highlight word blocks ── */
 .hw {
   display: inline-block;
   font-family: 'Pacifico', cursive;
-  padding: 0.1em 0.25em;
   line-height: 1.05;
+  padding: 0.06em 0.22em;
   position: relative;
 }
-.hw-sm {
-  font-family: 'Righteous', sans-serif;
-  font-size: 0.55em;
-  letter-spacing: 0.06em;
-  display: inline-block;
-  vertical-align: middle;
-  color: var(--m-warm);
-  padding: 0 0.3em;
-}
-
 .hw-cherainboow {
-  font-size: clamp(2.4rem, 6vw, 4.2rem);
-  background: var(--m-lav);
-  color: var(--dark);
-  transform: rotate(-1.2deg);
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  background: var(--candy-pink);
+  color: #fff;
+  transform: rotate(-1.5deg);
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
 }
 .hw-arts {
-  font-size: clamp(2.8rem, 7vw, 5rem);
-  background: var(--m-rose);
-  color: #fff;
-  transform: rotate(0.8deg);
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
-  margin-left: 0.2em;
-}
-.hw-art {
-  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
-  background: var(--m-terra);
-  color: #fff;
-  transform: rotate(-0.5deg);
-  box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
-}
-.hw-science {
-  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
-  background: var(--m-sage);
-  color: var(--dark);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  background: var(--candy-cyan);
+  color: #0d0d0d;
   transform: rotate(1deg);
-  box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
   margin-left: 0.15em;
 }
-.hw-plain {
+.hw-sub {
   font-family: 'Righteous', sans-serif;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  color: rgba(255,255,255,0.55);
+  font-size: clamp(0.68rem, 1.4vw, 0.9rem);
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.06em;
+  display: block;
   padding: 0;
-  letter-spacing: 0.04em;
+  margin-top: 0.3rem;
 }
 
 .arts-poster-ig {
-  margin-top: 1.2rem;
+  margin-top: 0.7rem;
   display: inline-block;
   background: transparent;
-  color: var(--m-rose) !important;
-  padding: 0.4rem 1.1rem;
+  color: var(--candy-yellow) !important;
+  padding: 0.35rem 1rem;
   font-family: 'Righteous', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-decoration: none;
-  border: 2px solid var(--m-rose);
-  box-shadow: 3px 3px 0 var(--m-rose);
+  border: 2px solid var(--candy-yellow);
+  box-shadow: 3px 3px 0 var(--candy-yellow);
+  width: fit-content;
   transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
 }
 .arts-poster-ig:hover {
-  background: var(--m-rose);
-  color: #fff !important;
+  background: var(--candy-yellow);
+  color: #0d0d0d !important;
   transform: translate(-2px,-2px);
-  box-shadow: 5px 5px 0 var(--m-rose);
+  box-shadow: 5px 5px 0 var(--candy-yellow);
 }
 
 /* ── Quote ── */
 .arts-quote {
   border: 2.5px solid var(--ink);
-  box-shadow: 5px 5px 0 var(--m-rose);
+  box-shadow: 5px 5px 0 var(--candy-pink);
   padding: 1.5rem 1.8rem;
   margin-bottom: 2.5rem;
-  background: var(--m-beige);
+  background: #0d0d0d;
 }
 .arts-quote p {
   font-family: 'Pacifico', cursive;
-  font-size: clamp(1rem, 2.2vw, 1.3rem);
-  line-height: 1.6;
-  color: var(--ink);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.65;
+  color: #fff;
   margin: 0 0 0.4rem;
 }
-.arts-quote p .qem { color: var(--m-terra); }
+.arts-quote p .qart { color: var(--candy-pink); }
+.arts-quote p .qsci { color: var(--candy-cyan); }
 .arts-quote cite {
   font-size: 0.6rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--m-warm);
+  color: rgba(255,255,255,0.4);
   font-family: "PT Sans", sans-serif;
 }
 
@@ -180,8 +179,7 @@ permalink: /arts/
 .arts-tag {
   padding: 0.28rem 0.85rem;
   font-family: 'Righteous', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 400;
+  font-size: 0.7rem;
   border: 2px solid var(--ink);
   color: var(--ink);
   letter-spacing: 0.04em;
@@ -225,45 +223,46 @@ permalink: /arts/
   color: var(--m-warm);
   letter-spacing: 0.06em;
 }
+
+@media (max-width: 540px) {
+  .arts-hero { min-height: 280px; }
+  .arts-poster { bottom: 1rem; left: 1rem; }
+}
 </style>
 
 <div class="arts-page">
 
-  <!-- Hero -->
+  <!-- Hero: illustration + gradient overlay + title bottom-left -->
   <div class="arts-hero">
-    <img class="arts-hero-illus" src="/public/image/hero-arts.png" alt="Cherainboow Arts" />
+    <img class="arts-hero-bg" src="/public/image/hero-arts.png" alt="Cherainboow Arts" />
+    <div class="arts-hero-overlay"></div>
     <div class="arts-poster">
-      <span class="arts-poster-line">
+      <div>
         <span class="hw hw-cherainboow">Cherainboow</span>
         <span class="hw hw-arts">ARTs</span>
-      </span>
-      <span class="arts-poster-line" style="margin-top:0.6rem">
-        <span class="hw hw-plain">wish to use </span>
-        <span class="hw hw-art">"Art"</span>
-        <span class="hw hw-plain"> to see the World</span>
-      </span>
-      <span class="arts-poster-line">
-        <span class="hw hw-plain">and </span>
-        <span class="hw hw-science">"Science"</span>
-        <span class="hw hw-plain"> to color the Nature</span>
-      </span>
-      <div>
-        <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">↗ @cherainboow</a>
       </div>
+      <span class="hw-sub">Portrait · Landscape · Watercolour · Procreate · Illustration</span>
+      <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">↗ @cherainboow</a>
     </div>
+  </div>
+
+  <!-- Quote -->
+  <div class="arts-quote">
+    <p>Wish to use <span class="qart">"Art"</span> to see the World<br>and <span class="qsci">"Science"</span> to color the Nature.</p>
+    <cite>— Cherub</cite>
   </div>
 
   <!-- Media tags -->
   <span class="arts-section-label">— Mediums</span>
   <div class="arts-tags">
-    <span class="arts-tag" style="background:var(--m-rose)">Oil Painting</span>
-    <span class="arts-tag" style="background:var(--m-beige)">Watercolour</span>
-    <span class="arts-tag" style="background:var(--m-sage)">Acrylic</span>
-    <span class="arts-tag" style="background:var(--m-blue)">Procreate</span>
-    <span class="arts-tag" style="background:var(--m-lav)">Mixed Media</span>
-    <span class="arts-tag" style="background:var(--m-warm)">Charcoal</span>
-    <span class="arts-tag" style="background:var(--m-terra);color:#fff">Oil Pastel</span>
-    <span class="arts-tag" style="background:var(--m-beige)">Illustration</span>
+    <span class="arts-tag" style="background:var(--candy-pink);border-color:var(--ink)">Oil Painting</span>
+    <span class="arts-tag" style="background:var(--candy-yellow);border-color:var(--ink)">Watercolour</span>
+    <span class="arts-tag" style="background:var(--candy-mint);border-color:var(--ink)">Acrylic</span>
+    <span class="arts-tag" style="background:var(--candy-cyan);border-color:var(--ink)">Procreate</span>
+    <span class="arts-tag" style="background:var(--candy-lav);border-color:var(--ink);color:#fff">Mixed Media</span>
+    <span class="arts-tag" style="background:var(--m-warm);border-color:var(--ink)">Charcoal</span>
+    <span class="arts-tag" style="background:var(--m-terra);border-color:var(--ink);color:#fff">Oil Pastel</span>
+    <span class="arts-tag" style="background:var(--m-beige);border-color:var(--ink)">Illustration</span>
   </div>
 
   <!-- Works -->
@@ -296,7 +295,7 @@ permalink: /arts/
   </div>
 
   <p style="text-align:center;font-family:'Righteous',sans-serif;font-size:0.72rem;letter-spacing:0.1em;color:var(--m-warm);">
-    More on <a href="https://www.instagram.com/cherainboow" target="_blank" style="color:var(--m-rose);text-decoration:none;">@cherainboow</a>
+    More on <a href="https://www.instagram.com/cherainboow" target="_blank" style="color:var(--candy-pink);text-decoration:none;">@cherainboow</a>
   </p>
 
 </div>
