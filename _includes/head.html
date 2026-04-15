@@ -26,4 +26,19 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Twemoji -->
+  <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@15.1.0/dist/twemoji.min.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      twemoji.parse(document.body, {
+        folder: 'svg', ext: '.svg',
+        base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/'
+      });
+    });
+  </script>
+  <style>
+    img.emoji { height:1.1em; width:1.1em; margin:0 .05em 0 .1em; vertical-align:-.1em; border:none!important; box-shadow:none!important; display:inline; }
+    .cc img.emoji { width:32px!important; height:32px!important; margin:0!important; vertical-align:middle!important; }
+  </style>
 </head>

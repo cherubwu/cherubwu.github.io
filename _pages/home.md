@@ -1,62 +1,123 @@
 ---
-layout:     page
-title:      Home
-permalink:  /home
-nav_order:  1
-pagination: 
-  enabled: true
+layout: page
+title: Home
+permalink: /home
+nav_order: 1
 ---
-<div class="post-list">
-  {% for post in site.posts %}
-  <a class="post-card" href="{{ post.url }}">
-    <span class="post-card-date">{{ post.date | date: "%b %Y" }}</span>
-    <span class="post-card-title">{{ post.title }}</span>
-    {% if post.description %}
-    <span class="post-card-desc">{{ post.description }}</span>
-    {% endif %}
-  </a>
-  {% endfor %}
-</div>
 
 <style>
-.post-list { display: flex; flex-direction: column; gap: 0; margin-top: 1rem; }
-.post-card {
-  display: grid;
-  grid-template-columns: 5.5rem 1fr;
-  grid-template-rows: auto auto;
-  column-gap: 1.2rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  text-decoration: none;
-  color: inherit;
-  transition: background 0.15s;
+.carrot-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 3rem;
 }
-.post-card:hover { background: rgba(170,117,159,0.06); padding-left: 0.5rem; padding-right: 0.5rem; margin: 0 -0.5rem; }
-.post-card-date {
-  grid-column: 1;
-  grid-row: 1;
+.carrot-title {
   font-size: 0.7rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #aaa;
-  padding-top: 0.15rem;
-  white-space: nowrap;
+  margin-bottom: 1.8rem;
 }
-.post-card-title {
-  grid-column: 2;
-  grid-row: 1;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #333;
-  line-height: 1.3;
+.carrot-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 58px);
+  grid-template-rows: repeat(9, 58px);
+  gap: 5px;
 }
-.post-card:hover .post-card-title { color: #aa759f; }
-.post-card-desc {
-  grid-column: 2;
-  grid-row: 2;
-  font-size: 0.8rem;
-  color: #888;
-  margin-top: 0.2rem;
-  line-height: 1.4;
+.cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 28px;
+  line-height: 1;
+  position: relative;
+  transition: transform 0.18s, box-shadow 0.18s;
+  text-decoration: none;
+}
+.cc.green  { background: rgba(60,160,50,0.14); }
+.cc.orange { background: rgba(255,138,0,0.13); }
+.cc.empty.green  { background: rgba(60,160,50,0.05); }
+.cc.empty.orange { background: rgba(255,138,0,0.05); }
+.cc:not(.empty):hover {
+  transform: scale(1.22);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+  z-index: 20;
+}
+.cc .tip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  font-size: 0.58rem;
+  padding: 0.3rem 0.55rem;
+  border-radius: 4px;
+  white-space: normal;
+  max-width: 160px;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.35;
+  z-index: 100;
+  pointer-events: none;
+}
+.cc:hover .tip { display: block; }
+@media (max-width: 480px) {
+  .carrot-grid {
+    grid-template-columns: repeat(7, 42px);
+    grid-template-rows: repeat(9, 42px);
+    gap: 4px;
+  }
+  .cc { font-size: 20px; border-radius: 7px; }
+  .cc img.emoji { width:22px!important; height:22px!important; }
 }
 </style>
+
+{% comment %}
+  Carrot grid — 7 cols × 9 rows (1-indexed for CSS grid)
+  Green cells (leaves): row1 col4 | row2 col3,4,5
+  Orange cells (body):  row3 col3-5 | row4 col2-6 | row5 col2-6
+                        row6 col3-5 | row7 col3-5 | row8 col4 | row9 col4
+  Total: 4 green + 21 orange = 25 cells
+  Posts fill cells in order: oldest posts = top greens, newest = carrot tip
+{% endcomment %}
+
+{% assign demojis = "🌻,🌸,🌿,🍁,🦋,🌊,⭐,🎨,📖,🎭,🌙,🔮,🦚,🌺,🍀,🎪,🏔️,🌈,🎵,🦜,🌾,🍂,🫧,🧸,🌝" | split: "," %}
+{% assign cells = "1,4,g|2,3,g|2,4,g|2,5,g|3,3,o|3,4,o|3,5,o|4,2,o|4,3,o|4,4,o|4,5,o|4,6,o|5,2,o|5,3,o|5,4,o|5,5,o|5,6,o|6,3,o|6,4,o|6,5,o|7,3,o|7,4,o|7,5,o|8,4,o|9,4,o" | split: "|" %}
+
+<div class="carrot-wrap">
+  <p class="carrot-title">— every post is a piece 🥕</p>
+  <div class="carrot-grid">
+    {% for cell in cells %}
+      {% assign p    = cell | split: "," %}
+      {% assign crow = p[0] %}
+      {% assign ccol = p[1] %}
+      {% assign ctype = p[2] %}
+      {% assign cidx = forloop.index0 %}
+      {% assign post = site.posts[cidx] %}
+      {% if ctype == "g" %}{% assign cclass = "green" %}{% else %}{% assign cclass = "orange" %}{% endif %}
+
+      {% if post %}
+        {% if post.emoji %}
+          {% assign cemoji = post.emoji %}
+        {% else %}
+          {% assign eidx = cidx | modulo: 25 %}
+          {% assign cemoji = demojis[eidx] %}
+        {% endif %}
+        <a class="cc {{ cclass }}" href="{{ post.url }}"
+           style="grid-row:{{ crow }};grid-column:{{ ccol }}">
+          {{ cemoji }}
+          <span class="tip">{{ post.title }}</span>
+        </a>
+      {% else %}
+        <div class="cc {{ cclass }} empty"
+             style="grid-row:{{ crow }};grid-column:{{ ccol }}">
+          {% if ctype == "g" %}🌿{% else %}🥕{% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
