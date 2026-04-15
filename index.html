@@ -3,24 +3,59 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<div class="post-list">
   {% for post in paginator.posts %}
-  <hr>
-  <div class="post">
-    <h3 class="post-title">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h3>
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
-    <a class="read-more" href="{{ post.url }}">Read more &rarr;</a>
-  </div>
+  <a class="post-card" href="{{ post.url }}">
+    <span class="post-card-date">{{ post.date | date: "%b %Y" }}</span>
+    <span class="post-card-title">{{ post.title }}</span>
+    {% if post.description %}
+    <span class="post-card-desc">{{ post.description }}</span>
+    {% endif %}
+  </a>
   {% endfor %}
 </div>
 
 <style>
-.post-excerpt { color: #666; margin: 0.5rem 0 0.3rem; line-height: 1.6; }
-.read-more { font-size: 0.8rem; letter-spacing: 0.05em; color: #aa759f; text-decoration: none; }
-.read-more:hover { text-decoration: underline; }
+.post-list { display: flex; flex-direction: column; gap: 0; margin-top: 1rem; }
+.post-card {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 1.2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s;
+}
+.post-card:hover { background: rgba(170,117,159,0.06); padding-left: 0.5rem; padding-right: 0.5rem; margin: 0 -0.5rem; }
+.post-card-date {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #aaa;
+  padding-top: 0.15rem;
+  white-space: nowrap;
+}
+.post-card-title {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+}
+.post-card:hover .post-card-title { color: #aa759f; }
+.post-card-desc {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.2rem;
+  line-height: 1.4;
+}
 </style>
 
 <div class="pagination">
