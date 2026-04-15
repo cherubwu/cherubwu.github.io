@@ -4,6 +4,8 @@ title: "CherainboowARTs"
 permalink: /arts/
 ---
 
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
 /* ── Morandi Neo-Brutalist Portfolio ── */
 :root {
@@ -15,6 +17,7 @@ permalink: /arts/
   --m-lav:    #A89BB0;
   --m-warm:   #B5AFA8;
   --ink:      #2C2C2C;
+  --dark:     #111009;
 }
 
 .arts-page {
@@ -25,74 +28,100 @@ permalink: /arts/
   padding: 0 0 4rem;
 }
 
-/* ── Hero — full-bleed illustration background ── */
+/* ── Hero — black bg, multiply removes white ── */
 .arts-hero {
-  position: relative;
+  background: var(--dark);
   border: 3px solid var(--ink);
   box-shadow: 8px 8px 0 var(--ink);
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   overflow: hidden;
-  background: #f5f0eb;
-  min-height: 320px;
+  position: relative;
 }
 .arts-hero-bg {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center center;
-  pointer-events: none;
+  height: auto;
+  mix-blend-mode: multiply;
+  filter: saturate(1.4) contrast(1.1);
 }
+/* Title block below the illustration */
 .arts-hero-text {
-  position: relative;
-  z-index: 2;
-  padding: 2.4rem 2rem 2.4rem 2.4rem;
+  background: var(--dark);
+  padding: 1.4rem 2rem 1.8rem;
+  border-top: 3px solid var(--ink);
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
-  max-width: 360px;
+  gap: 0.45rem;
 }
 .arts-eyebrow {
-  font-size: 0.6rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+  font-family: 'Caveat', cursive;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
   color: var(--m-warm);
 }
-.arts-hero h1 {
-  font-family: "Abril Fatface", serif;
-  font-size: clamp(2rem, 4vw, 3rem);
+.arts-hero-name {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
   line-height: 1.0;
-  color: var(--ink);
+  color: #fff;
   margin: 0;
-  border: none;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
-.arts-hero h1 span { color: var(--m-rose); }
+.arts-hero-name span { color: var(--m-rose); }
 .arts-hero-sub {
-  font-size: 0.78rem;
+  font-family: 'Caveat', cursive;
+  font-size: 1.05rem;
   color: var(--m-warm);
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0;
 }
 .arts-hero-cta {
   display: inline-block;
-  margin-top: 0.4rem;
-  background: var(--ink);
-  color: var(--m-beige) !important;
-  padding: 0.55rem 1.4rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  margin-top: 0.3rem;
+  background: transparent;
+  color: var(--m-rose) !important;
+  padding: 0.45rem 1.2rem;
+  font-family: 'Caveat', cursive;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
   text-decoration: none;
   font-weight: 700;
-  border: 2.5px solid var(--ink);
-  box-shadow: 4px 4px 0 var(--m-rose);
+  border: 2px solid var(--m-rose);
+  box-shadow: 3px 3px 0 var(--m-rose);
   width: fit-content;
-  transition: transform 0.15s, box-shadow 0.15s;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
 }
 .arts-hero-cta:hover {
+  background: var(--m-rose);
+  color: #fff !important;
   transform: translate(-2px,-2px);
-  box-shadow: 6px 6px 0 var(--m-rose);
+  box-shadow: 5px 5px 0 var(--m-rose);
+}
+
+/* ── Quote ── */
+.arts-quote {
+  border: 2.5px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--m-rose);
+  padding: 1.6rem 2rem;
+  margin: 2.5rem 0 2.5rem;
+  background: var(--m-beige);
+  position: relative;
+}
+.arts-quote p {
+  font-family: 'Caveat', cursive;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0 0 0.4rem;
+}
+.arts-quote p em { color: var(--m-terra); font-style: normal; font-weight: 700; }
+.arts-quote cite {
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--m-warm);
+  font-family: "PT Sans", sans-serif;
 }
 
 /* ── Section label ── */
@@ -103,6 +132,23 @@ permalink: /arts/
   text-transform: uppercase;
   color: var(--m-warm);
   margin-bottom: 1.2rem;
+}
+
+/* ── Medium tags ── */
+.arts-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.arts-tag {
+  padding: 0.28rem 0.85rem;
+  font-family: 'Caveat', cursive;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 2px solid var(--ink);
+  color: var(--ink);
+  letter-spacing: 0.03em;
 }
 
 /* ── Works grid ── */
@@ -133,107 +179,54 @@ permalink: /arts/
   display: block;
   border-bottom: 2px solid var(--ink);
   transition: filter 0.3s;
-  filter: saturate(0.75);
+  filter: saturate(0.7);
 }
-.arts-item:hover img { filter: saturate(1.1); }
+.arts-item:hover img { filter: saturate(1.15); }
 .arts-item-label {
-  padding: 0.5rem 0.75rem;
-  font-size: 0.62rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  padding: 0.45rem 0.75rem;
+  font-family: 'Caveat', cursive;
+  font-size: 0.9rem;
   color: var(--m-warm);
-  font-weight: 700;
+  font-weight: 600;
   background: var(--m-beige);
 }
 
-/* ── Quote ── */
-.arts-quote {
-  border: 2.5px solid var(--ink);
-  box-shadow: 5px 5px 0 var(--m-rose);
-  padding: 1.8rem 2rem;
-  margin-bottom: 3rem;
-  background: #fff;
-  position: relative;
-}
-.arts-quote::before {
-  content: '"';
-  font-family: "Abril Fatface", serif;
-  font-size: 6rem;
-  color: var(--m-rose);
-  opacity: 0.18;
-  position: absolute;
-  top: -1.5rem;
-  left: 1rem;
-  line-height: 1;
-}
-.arts-quote p {
-  font-family: "Abril Fatface", serif;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: var(--ink);
-  margin: 0 0 0.5rem;
-  position: relative;
-}
-.arts-quote cite {
-  font-size: 0.65rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--m-warm);
-}
-
-/* ── Color tag strip ── */
-.arts-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
-}
-.arts-tag {
-  padding: 0.3rem 0.9rem;
-  font-size: 0.62rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: 2px solid var(--ink);
-  color: var(--ink);
-}
-
-/* ── Responsive ── */
 @media (max-width: 600px) {
-  .arts-hero { min-height: 240px; }
-  .arts-hero-text { max-width: 100%; background: rgba(245,240,235,0.75); }
+  .arts-hero-bg { min-height: 200px; object-fit: contain; }
 }
 </style>
 
 <div class="arts-page">
 
-  <!-- Hero -->
+  <!-- Hero: illustration on black, title below -->
   <div class="arts-hero">
-    <img class="arts-hero-bg" src="/public/image/hero-arts.png" alt="" />
+    <img class="arts-hero-bg" src="/public/image/hero-arts.png" alt="Cherainboow Arts" />
     <div class="arts-hero-text">
       <span class="arts-eyebrow">— Visual Portfolio</span>
-      <h1>Cherainboow<br><span>ARTs</span></h1>
-      <p class="arts-hero-sub">Painting · Photography · Visual Storytelling</p>
-      <a class="arts-hero-cta" href="https://www.instagram.com/cherainboow" target="_blank">↗ Instagram</a>
+      <div class="arts-hero-name">Cherainboow<span>ARTs</span></div>
+      <p class="arts-hero-sub">Portrait · Landscape · Watercolour · Acrylic · Mixed Media<br>Procreate · Pencil & Charcoal · Oil Pastel · Illustration</p>
+      <a class="arts-hero-cta" href="https://www.instagram.com/cherainboow" target="_blank">↗ Follow on Instagram</a>
     </div>
   </div>
 
   <!-- Quote -->
   <div class="arts-quote">
-    <p>To see a World in a Grain of Sand, and a Heaven in a Wild Flower.</p>
-    <cite>— William Blake, Auguries of Innocence</cite>
+    <p>Wish to use <em>"Art"</em> to see the World<br>and <em>"Science"</em> to color the Nature.</p>
+    <cite>— Cherub</cite>
   </div>
 
-  <!-- Tags -->
+  <!-- Works -->
   <span class="arts-section-label">— Works</span>
   <div class="arts-tags">
-    <span class="arts-tag" style="background:var(--m-rose);border-color:var(--ink)">Oil Painting</span>
-    <span class="arts-tag" style="background:var(--m-sage);border-color:var(--ink)">Photography</span>
-    <span class="arts-tag" style="background:var(--m-blue);border-color:var(--ink)">Illustration</span>
-    <span class="arts-tag" style="background:var(--m-lav);border-color:var(--ink)">Mixed Media</span>
+    <span class="arts-tag" style="background:var(--m-rose)">Oil Painting</span>
+    <span class="arts-tag" style="background:var(--m-beige)">Watercolour</span>
+    <span class="arts-tag" style="background:var(--m-sage)">Acrylic</span>
+    <span class="arts-tag" style="background:var(--m-blue)">Procreate</span>
+    <span class="arts-tag" style="background:var(--m-lav)">Mixed Media</span>
+    <span class="arts-tag" style="background:var(--m-warm)">Charcoal</span>
+    <span class="arts-tag" style="background:var(--m-terra)">Oil Pastel</span>
   </div>
 
-  <!-- Grid -->
   <div class="arts-grid">
 
     <a class="arts-item" href="https://www.instagram.com/cherainboow" target="_blank">
@@ -268,7 +261,7 @@ permalink: /arts/
 
   </div>
 
-  <p style="text-align:center;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--m-warm);">
+  <p style="text-align:center;font-family:'Caveat',cursive;font-size:1rem;color:var(--m-warm);">
     More on <a href="https://www.instagram.com/cherainboow" target="_blank" style="color:var(--m-rose);text-decoration:none;font-weight:700;">@cherainboow</a>
   </p>
 
