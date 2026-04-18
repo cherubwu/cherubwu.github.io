@@ -55,7 +55,7 @@ permalink: /arts/
 /* ── Instagram link overlaid bottom-center ── */
 .arts-poster-ig {
   position: absolute;
-  top: 1rem;
+  bottom: 1rem;
   right: 1.5rem;
   display: inline-block;
   background: transparent;
