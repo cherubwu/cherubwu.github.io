@@ -27,7 +27,7 @@ permalink: /arts/
   --mac-peach:  #F5C9A8;
 }
 
-/* ── Page wrapper: full black ── */
+/* ── Page wrapper ── */
 .arts-page {
   font-family: "PT Sans", sans-serif;
   color: #fff;
@@ -35,112 +35,83 @@ permalink: /arts/
   max-width: 900px;
   margin: 0 auto;
   padding: 0 0 4rem;
-  border: 3px solid #222;
-  box-shadow: 10px 10px 0 #111;
+  border: 3px solid #2a1050;
+  box-shadow: 10px 10px 0 #1a0838;
 }
 
 /* ── Hero ── */
 .arts-hero {
   position: relative;
-  background: #0d0d0d;
+  background: #3D1F6E;
   overflow: hidden;
-  min-height: 520px;
+  min-height: 500px;
 }
 .arts-hero-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
+  height: 65%;
   object-fit: cover;
   object-position: center top;
 }
 
-/* ── Title overlay in the black band at bottom of hero ── */
+/* ── Title overlay in the purple band ── */
 .arts-poster-bar {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1.2rem 2rem 1.6rem;
+  padding: 0.8rem 2rem 1.4rem;
   text-align: center;
   background: transparent;
 }
 
 .poster-creative {
   font-family: 'Pagkaki', cursive;
-  font-size: clamp(0.9rem, 2vw, 1.4rem);
-  color: var(--mac-rose);
+  font-size: clamp(1rem, 2.5vw, 1.7rem);
+  color: #ffffff;
   margin: 0;
   line-height: 1.1;
 }
 .poster-portfolio {
   font-family: 'Pagkaki', cursive;
-  font-size: clamp(3.5rem, 11vw, 7.5rem);
-  color: #fff;
-  margin: 0 0 0.15rem;
-  line-height: 0.95;
+  font-size: clamp(3.5rem, 12vw, 8rem);
+  color: #E8642A;
+  margin: -0.1rem 0 0.1rem;
+  line-height: 0.9;
 }
-
-.poster-title {
-  line-height: 1;
-  margin-bottom: 0.6rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.1em;
-}
-
-.hw {
-  display: inline-block;
-  font-family: 'Pagkaki', cursive;
-  line-height: 1.05;
-  padding: 0.06em 0.2em;
-}
-.hw-cherainboow {
-  font-size: clamp(1.3rem, 3.5vw, 2.4rem);
-  background: var(--mac-rose);
-  color: #1a1a1a;
-  transform: rotate(-1deg);
-  box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
-}
-.hw-arts {
-  font-size: clamp(1.3rem, 3.5vw, 2.4rem);
-  background: var(--mac-mint);
-  color: #1a1a1a;
-  transform: rotate(0.8deg);
-  box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
-  margin-left: 0.1em;
+.poster-name {
+  font-family: 'Righteous', sans-serif;
+  font-size: clamp(0.7rem, 1.8vw, 1.1rem);
+  color: #ffffff;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin: 0.1rem 0 0.5rem;
 }
 
 .arts-poster-ig {
   display: inline-block;
   background: transparent;
-  color: var(--mac-lemon) !important;
-  padding: 0.18rem 0.55rem;
+  color: rgba(255,255,255,0.7) !important;
   font-family: 'Righteous', sans-serif;
-  font-size: 0.6rem;
-  letter-spacing: 0.1em;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
   text-decoration: none;
-  border: 1.5px solid var(--mac-lemon);
-  box-shadow: 2px 2px 0 var(--mac-lemon);
-  width: fit-content;
-  transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+  font-style: italic;
+  transition: color 0.15s;
 }
 .arts-poster-ig:hover {
-  background: var(--mac-lemon);
-  color: #1a1a1a !important;
-  transform: translate(-1px,-1px);
-  box-shadow: 3px 3px 0 var(--mac-lemon);
+  color: #ffffff !important;
 }
 
 /* ── Quote ── */
 .arts-quote {
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
+  border-top: 1px solid #2a1050;
+  border-bottom: 1px solid #2a1050;
   padding: 1.5rem 2rem;
   margin-bottom: 0;
-  background: #111;
+  background: #1a0838;
 }
 .arts-quote p {
   font-family: 'Pagkaki', cursive;
@@ -263,16 +234,14 @@ permalink: /arts/
 
 <div class="arts-page">
 
-  <!-- Hero: illustration + title in the black band below it -->
+  <!-- Hero: illustration + title on purple -->
   <div class="arts-hero">
     <img class="arts-hero-bg" src="/public/image/hero-arts.png" alt="Cherainboow Arts" />
     <div class="arts-poster-bar">
       <p class="poster-creative">creative</p>
       <p class="poster-portfolio">PORTFOLIO</p>
-      <div class="poster-title">
-        <span class="hw hw-cherainboow">Cherainboow</span><span class="hw hw-arts">ARTs</span>
-      </div>
-      <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">↗ @cherainboow</a>
+      <p class="poster-name">CherainboowARTs</p>
+      <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">@cherainboow</a>
     </div>
   </div>
 
