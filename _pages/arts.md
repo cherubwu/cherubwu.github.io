@@ -112,17 +112,17 @@ permalink: /arts/
 }
 
 .arts-poster-ig {
-  margin-top: 0.7rem;
+  margin-top: 0.5rem;
   display: inline-block;
   background: transparent;
   color: var(--mac-lemon) !important;
-  padding: 0.35rem 1rem;
+  padding: 0.2rem 0.6rem;
   font-family: 'Righteous', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
+  font-size: 0.62rem;
+  letter-spacing: 0.07em;
   text-decoration: none;
-  border: 2px solid var(--mac-lemon);
-  box-shadow: 3px 3px 0 var(--mac-lemon);
+  border: 1.5px solid var(--mac-lemon);
+  box-shadow: 2px 2px 0 var(--mac-lemon);
   width: fit-content;
   transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
 }
@@ -241,7 +241,6 @@ permalink: /arts/
         <span class="hw hw-cherainboow">Cherainboow</span>
         <span class="hw hw-arts">ARTs</span>
       </div>
-      <span class="hw-sub">Portrait · Landscape · Watercolour · Procreate · Illustration</span>
       <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">↗ @cherainboow</a>
     </div>
   </div>
