@@ -41,6 +41,162 @@ permalink: /arts/
   padding: 0 0 4rem;
 }
 
+/* ── Brain Intro ── */
+.brain-intro {
+  background-color: #fafaf7;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+  border: 3px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ink);
+  padding: 2.4rem 1.8rem 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.brain-welcome {
+  font-family: 'Pagkaki', cursive;
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  color: var(--ink);
+  margin: 0 0 0.4rem;
+  line-height: 1.1;
+}
+
+.brain-tagline {
+  font-family: 'Righteous', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--m-warm);
+  margin: 0 0 2rem;
+}
+
+.brain-split {
+  display: flex;
+  align-items: stretch;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.brain-half {
+  flex: 1;
+  padding: 1.4rem 1.2rem;
+  border: 2.5px solid var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  text-align: left;
+}
+
+.brain-art {
+  background: var(--mac-rose);
+  box-shadow: -5px 5px 0 var(--ink);
+  transform: rotate(-0.6deg);
+}
+
+.brain-sci {
+  background: #0d2b35;
+  box-shadow: 5px 5px 0 var(--ink);
+  transform: rotate(0.6deg);
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.brain-sci:hover {
+  transform: rotate(0.6deg) translate(-2px,-2px);
+  box-shadow: 7px 7px 0 var(--ink);
+}
+
+.brain-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.9rem;
+  gap: 0.3rem;
+  flex-shrink: 0;
+}
+
+.brain-connector-arrow {
+  font-size: 1.5rem;
+  color: var(--ink);
+  animation: pulse-lr 2.2s ease-in-out infinite;
+  display: block;
+}
+
+@keyframes pulse-lr {
+  0%, 100% { transform: scaleX(1); opacity: 1; }
+  50% { transform: scaleX(1.4); opacity: 0.5; }
+}
+
+.brain-connector-text {
+  font-family: 'Righteous', sans-serif;
+  font-size: 0.5rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--m-warm);
+  white-space: nowrap;
+}
+
+.brain-half-emoji { font-size: 1.6rem; line-height: 1; }
+
+.brain-half-name {
+  font-family: 'Pagkaki', cursive;
+  font-size: clamp(1rem, 2.2vw, 1.5rem);
+  line-height: 1.1;
+  color: var(--ink);
+}
+.brain-sci .brain-half-name { color: #fff; }
+
+.brain-half-desc {
+  font-family: 'Righteous', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  color: rgba(0,0,0,0.5);
+  line-height: 1.55;
+}
+.brain-sci .brain-half-desc { color: rgba(255,255,255,0.45); }
+
+.brain-active-badge {
+  display: inline-block;
+  font-family: 'Righteous', sans-serif;
+  font-size: 0.5rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: #fff;
+  padding: 0.18em 0.55em;
+  margin-top: 0.2rem;
+  width: fit-content;
+}
+
+.brain-sci-cta {
+  font-family: 'Righteous', sans-serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  color: var(--mac-sky);
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.brain-down {
+  font-family: 'Righteous', sans-serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--m-warm);
+  margin: 1.8rem 0 0;
+}
+
+@media (max-width: 540px) {
+  .brain-split { flex-direction: column; }
+  .brain-connector { flex-direction: row; padding: 0.6rem 0; justify-content: center; }
+  .brain-connector-arrow { animation: none; }
+  .brain-art, .brain-sci { transform: none; }
+  .brain-art { box-shadow: -4px 4px 0 var(--ink); }
+  .brain-sci { box-shadow: 4px 4px 0 var(--ink); }
+}
+
 /* ── Hero ── */
 .arts-hero {
   position: relative;
@@ -229,7 +385,39 @@ permalink: /arts/
 
 <div class="arts-page">
 
-  <!-- Hero: illustration only, no text overlay -->
+  <!-- Brain Intro -->
+  <div class="brain-intro">
+    <p class="brain-welcome">welcome to my brain 🧠</p>
+    <p class="brain-tagline">— a digitised collection of two worlds living inside one head —</p>
+
+    <div class="brain-split">
+      <!-- Art half (active = this page) -->
+      <div class="brain-half brain-art">
+        <span class="brain-half-emoji">🎨</span>
+        <span class="brain-half-name">Cherainboow<br>ARTs</span>
+        <span class="brain-half-desc">Portrait · Landscape<br>Watercolour · Oil · Procreate<br>Charcoal · Illustration</span>
+        <span class="brain-active-badge">◀ you are here</span>
+      </div>
+
+      <!-- Connector -->
+      <div class="brain-connector">
+        <span class="brain-connector-arrow">↔</span>
+        <span class="brain-connector-text">they<br>talk</span>
+      </div>
+
+      <!-- Science half (links out) -->
+      <a class="brain-half brain-sci" href="https://cherubwu.github.io/Circle-of-Life/" target="_blank">
+        <span class="brain-half-emoji">🔬</span>
+        <span class="brain-half-name">Cherainboow<br>SCIENCEs</span>
+        <span class="brain-half-desc">Neuroscience · Metabolism<br>Immunology · Biotech<br>Nature · Logic</span>
+        <span class="brain-sci-cta">↗ visit the science side</span>
+      </a>
+    </div>
+
+    <p class="brain-down">↓ exploring the art side ↓</p>
+  </div>
+
+  <!-- Hero: illustration only -->
   <div class="arts-hero">
     <img class="arts-hero-bg" src="/public/image/hero-arts.png" alt="Cherainboow Arts" />
   </div>
