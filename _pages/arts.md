@@ -59,21 +59,18 @@ permalink: /arts/
   left: 50%;
   transform: translateX(-50%);
   display: inline-block;
-  background: rgba(61,31,110,0.7);
+  background: transparent;
   color: #ffffff !important;
   padding: 0.3rem 1rem;
   font-family: 'Righteous', sans-serif;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-decoration: none;
-  border: 1.5px solid rgba(255,255,255,0.4);
-  backdrop-filter: blur(4px);
   white-space: nowrap;
   transition: background 0.15s, border-color 0.15s;
 }
 .arts-poster-ig:hover {
-  background: rgba(232,100,42,0.85);
-  border-color: #E8642A;
+  color: #E8642A !important;
 }
 
 /* ── Quote ── */
