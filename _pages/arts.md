@@ -63,12 +63,19 @@ permalink: /arts/
   text-align: left;
 }
 
-.poster-label {
+.poster-creative {
   font-family: 'Pagkaki', cursive;
   font-size: clamp(1rem, 2.5vw, 1.6rem);
   color: var(--mac-rose);
-  margin: 0 0 0.2rem;
+  margin: 0;
   line-height: 1.1;
+}
+.poster-portfolio {
+  font-family: 'Pagkaki', cursive;
+  font-size: clamp(3rem, 10vw, 7rem);
+  color: #fff;
+  margin: 0 0 0.2rem;
+  line-height: 0.95;
 }
 
 .poster-title {
@@ -253,9 +260,10 @@ permalink: /arts/
     <img class="arts-hero-bg" src="/public/image/hero-arts.png" alt="Cherainboow Arts" />
   </div>
 
-  <!-- Title: creative portfolio / CherainboowARTs / @cherainboow -->
+  <!-- Title: creative / portfolio / CherainboowARTs / @cherainboow -->
   <div class="arts-poster-bar">
-    <p class="poster-label">creative portfolio</p>
+    <p class="poster-creative">creative</p>
+    <p class="poster-portfolio">portfolio</p>
     <div class="poster-title">
       <span class="hw hw-cherainboow">Cherainboow</span><span class="hw hw-arts">ARTs</span>
     </div>
