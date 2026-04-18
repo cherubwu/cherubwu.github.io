@@ -69,3 +69,159 @@ Pop quiz! Fire philosophy questions in 30 seconds!<br><br>
 • Is morality objective?<br>
 • Are other animals conscious?<br>
 </p>
+
+<hr>
+
+<style>
+@font-face {
+  font-family: 'Pagkaki';
+  src: url('/public/fonts/PAGKAKI-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+.brain-intro-about {
+  background-color: #fafaf7;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+  border: 3px solid #2C2C2C;
+  box-shadow: 8px 8px 0 #2C2C2C;
+  padding: 2rem 1.5rem 1.8rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.brain-about-title {
+  font-family: 'Pagkaki', 'Georgia', cursive;
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+  color: #2C2C2C;
+  margin: 0 0 0.35rem;
+  line-height: 1.1;
+}
+.brain-about-sub {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #B5AFA8;
+  margin: 0 0 1.8rem;
+}
+.brain-about-split {
+  display: flex;
+  align-items: stretch;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.brain-about-half {
+  flex: 1;
+  padding: 1.2rem 1rem;
+  border: 2.5px solid #2C2C2C;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: left;
+}
+.brain-about-art {
+  background: #F2B5C0;
+  box-shadow: -4px 4px 0 #2C2C2C;
+  transform: rotate(-0.5deg);
+}
+.brain-about-sci {
+  background: #0d2b35;
+  box-shadow: 4px 4px 0 #2C2C2C;
+  transform: rotate(0.5deg);
+  text-decoration: none;
+  transition: transform 0.15s;
+}
+.brain-about-sci:hover { transform: rotate(0.5deg) translate(-2px,-2px); }
+.brain-about-conn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.7rem;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+.brain-about-arrow {
+  font-size: 1.3rem;
+  color: #2C2C2C;
+  animation: brain-pulse 2.2s ease-in-out infinite;
+}
+@keyframes brain-pulse {
+  0%,100%{transform:scaleX(1);opacity:1}
+  50%{transform:scaleX(1.4);opacity:0.5}
+}
+.brain-about-conn-text {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.48rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #B5AFA8;
+  white-space: nowrap;
+}
+.brain-about-emoji { font-size: 1.4rem; line-height: 1; }
+.brain-about-name {
+  font-family: 'Pagkaki', 'Georgia', cursive;
+  font-size: clamp(0.95rem, 2vw, 1.3rem);
+  line-height: 1.1;
+  color: #2C2C2C;
+}
+.brain-about-sci .brain-about-name { color: #fff; }
+.brain-about-desc {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
+  color: rgba(0,0,0,0.5);
+  line-height: 1.5;
+}
+.brain-about-sci .brain-about-desc { color: rgba(255,255,255,0.45); }
+.brain-about-badge {
+  display: inline-block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.48rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: #2C2C2C;
+  color: #fff;
+  padding: 0.15em 0.5em;
+  margin-top: 0.2rem;
+  width: fit-content;
+}
+.brain-about-cta {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.08em;
+  color: #A8D8EA;
+  margin-top: auto;
+  padding-top: 0.4rem;
+}
+@media (max-width: 500px) {
+  .brain-about-split { flex-direction: column; }
+  .brain-about-conn { flex-direction: row; padding: 0.5rem 0; }
+  .brain-about-arrow { animation: none; }
+  .brain-about-art,.brain-about-sci { transform: none; box-shadow: 4px 4px 0 #2C2C2C; }
+}
+</style>
+
+<div class="brain-intro-about">
+  <p class="brain-about-title">welcome to my brain 🧠</p>
+  <p class="brain-about-sub">— two worlds, one head —</p>
+  <div class="brain-about-split">
+    <div class="brain-about-half brain-about-art">
+      <span class="brain-about-emoji">🎨</span>
+      <span class="brain-about-name">Cherainboow<br>ARTs</span>
+      <span class="brain-about-desc">Portrait · Landscape<br>Watercolour · Oil · Procreate<br>Charcoal · Illustration</span>
+      <span class="brain-about-badge">← Art Brain</span>
+    </div>
+    <div class="brain-about-conn">
+      <span class="brain-about-arrow">↔</span>
+      <span class="brain-about-conn-text">they<br>talk</span>
+    </div>
+    <a class="brain-about-half brain-about-sci" href="https://cherubwu.github.io/Circle-of-Life/" target="_blank">
+      <span class="brain-about-emoji">🔬</span>
+      <span class="brain-about-name">Cherainboow<br>SCIENCEs</span>
+      <span class="brain-about-desc">Neuroscience · Metabolism<br>Immunology · Biotech<br>Nature · Logic</span>
+      <span class="brain-about-cta">↗ Science Brain</span>
+    </a>
+  </div>
+</div>
