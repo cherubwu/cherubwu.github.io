@@ -263,7 +263,7 @@ permalink: /arts/
   <!-- Title: creative / portfolio / CherainboowARTs / @cherainboow -->
   <div class="arts-poster-bar">
     <p class="poster-creative">creative</p>
-    <p class="poster-portfolio">portfolio</p>
+    <p class="poster-portfolio">PORTFOLIO</p>
     <div class="poster-title">
       <span class="hw hw-cherainboow">Cherainboow</span><span class="hw hw-arts">ARTs</span>
     </div>
