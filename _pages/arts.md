@@ -202,7 +202,7 @@ permalink: /arts/
 
   <!-- Hero: Canva design as full image + Instagram link -->
   <div class="arts-hero">
-    <img class="arts-hero-bg" src="/public/image/hero-arts-bg.jpg" alt="Cherainboow Arts — Creative Portfolio" />
+    <img class="arts-hero-bg" src="/public/image/hero-arts-bg2.png" alt="Cherainboow Arts — Creative Portfolio" />
     <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">@cherainboow</a>
   </div>
 
