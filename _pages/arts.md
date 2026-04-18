@@ -44,43 +44,51 @@ permalink: /arts/
   position: relative;
   background: #0d0d0d;
   overflow: hidden;
-  min-height: 360px;
+  min-height: 520px;
 }
 .arts-hero-bg {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 70%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center top;
 }
 
-/* ── Title area below hero ── */
+/* ── Title overlay in the black band at bottom of hero ── */
 .arts-poster-bar {
-  background: #0d0d0d;
-  padding: 1.6rem 2rem 1.8rem;
-  border-top: 1px solid #222;
-  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.2rem 2rem 1.6rem;
+  text-align: center;
+  background: transparent;
 }
 
 .poster-creative {
   font-family: 'Pagkaki', cursive;
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-size: clamp(0.9rem, 2vw, 1.4rem);
   color: var(--mac-rose);
   margin: 0;
   line-height: 1.1;
 }
 .poster-portfolio {
   font-family: 'Pagkaki', cursive;
-  font-size: clamp(3rem, 10vw, 7rem);
+  font-size: clamp(2.6rem, 8vw, 5.5rem);
   color: #fff;
-  margin: 0 0 0.2rem;
+  margin: 0 0 0.15rem;
   line-height: 0.95;
 }
 
 .poster-title {
   line-height: 1;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.1em;
 }
 
 .hw {
@@ -245,8 +253,8 @@ permalink: /arts/
 }
 
 @media (max-width: 540px) {
-  .arts-hero { min-height: 220px; }
-  .arts-poster-bar { padding: 1.2rem 1.2rem 1.4rem; }
+  .arts-hero { min-height: 380px; }
+  .arts-poster-bar { padding: 0.8rem 1rem 1.2rem; }
   .arts-section-label, .arts-works-label { padding-left: 1.2rem; }
   .arts-tags, .arts-grid { padding-left: 1.2rem; padding-right: 1.2rem; }
   .arts-footer-link { padding-left: 1.2rem; padding-right: 1.2rem; }
@@ -255,19 +263,17 @@ permalink: /arts/
 
 <div class="arts-page">
 
-  <!-- Hero: illustration -->
+  <!-- Hero: illustration + title in the black band below it -->
   <div class="arts-hero">
     <img class="arts-hero-bg" src="/public/image/hero-arts.png" alt="Cherainboow Arts" />
-  </div>
-
-  <!-- Title: creative / portfolio / CherainboowARTs / @cherainboow -->
-  <div class="arts-poster-bar">
-    <p class="poster-creative">creative</p>
-    <p class="poster-portfolio">PORTFOLIO</p>
-    <div class="poster-title">
-      <span class="hw hw-cherainboow">Cherainboow</span><span class="hw hw-arts">ARTs</span>
+    <div class="arts-poster-bar">
+      <p class="poster-creative">creative</p>
+      <p class="poster-portfolio">PORTFOLIO</p>
+      <div class="poster-title">
+        <span class="hw hw-cherainboow">Cherainboow</span><span class="hw hw-arts">ARTs</span>
+      </div>
+      <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">↗ @cherainboow</a>
     </div>
-    <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">↗ @cherainboow</a>
   </div>
 
   <!-- Quote -->
