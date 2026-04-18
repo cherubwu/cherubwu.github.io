@@ -44,65 +44,36 @@ permalink: /arts/
   position: relative;
   background: #3D1F6E;
   overflow: hidden;
-  min-height: 500px;
 }
 .arts-hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
   width: 100%;
-  height: 65%;
+  height: auto;
   object-fit: cover;
-  object-position: center top;
 }
 
-/* ── Title overlay in the purple band ── */
-.arts-poster-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0.8rem 2rem 1.4rem;
-  text-align: center;
-  background: transparent;
-}
-
-.poster-creative {
-  font-family: 'Pagkaki', cursive;
-  font-size: clamp(1rem, 2.5vw, 1.7rem);
-  color: #ffffff;
-  margin: 0;
-  line-height: 1.1;
-}
-.poster-portfolio {
-  font-family: 'Pagkaki', cursive;
-  font-size: clamp(3.5rem, 12vw, 8rem);
-  color: #E8642A;
-  margin: -0.1rem 0 0.1rem;
-  line-height: 0.9;
-}
-.poster-name {
-  font-family: 'Righteous', sans-serif;
-  font-size: clamp(0.7rem, 1.8vw, 1.1rem);
-  color: #ffffff;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  margin: 0.1rem 0 0.5rem;
-}
-
+/* ── Instagram link overlaid bottom-center ── */
 .arts-poster-ig {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: inline-block;
-  background: transparent;
-  color: rgba(255,255,255,0.7) !important;
+  background: rgba(61,31,110,0.7);
+  color: #ffffff !important;
+  padding: 0.3rem 1rem;
   font-family: 'Righteous', sans-serif;
-  font-size: 0.62rem;
-  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
   text-decoration: none;
-  font-style: italic;
-  transition: color 0.15s;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  backdrop-filter: blur(4px);
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s;
 }
 .arts-poster-ig:hover {
-  color: #ffffff !important;
+  background: rgba(232,100,42,0.85);
+  border-color: #E8642A;
 }
 
 /* ── Quote ── */
@@ -224,8 +195,7 @@ permalink: /arts/
 }
 
 @media (max-width: 540px) {
-  .arts-hero { min-height: 380px; }
-  .arts-poster-bar { padding: 0.8rem 1rem 1.2rem; }
+  .arts-poster-ig { font-size: 0.65rem; bottom: 0.7rem; }
   .arts-section-label, .arts-works-label { padding-left: 1.2rem; }
   .arts-tags, .arts-grid { padding-left: 1.2rem; padding-right: 1.2rem; }
   .arts-footer-link { padding-left: 1.2rem; padding-right: 1.2rem; }
@@ -234,15 +204,10 @@ permalink: /arts/
 
 <div class="arts-page">
 
-  <!-- Hero: illustration + title on purple -->
+  <!-- Hero: Canva design as full image + Instagram link -->
   <div class="arts-hero">
-    <img class="arts-hero-bg" src="/public/image/hero-arts.png" alt="Cherainboow Arts" />
-    <div class="arts-poster-bar">
-      <p class="poster-creative">creative</p>
-      <p class="poster-portfolio">PORTFOLIO</p>
-      <p class="poster-name">CherainboowARTs</p>
-      <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">@cherainboow</a>
-    </div>
+    <img class="arts-hero-bg" src="/public/image/hero-arts-bg.jpg" alt="Cherainboow Arts — Creative Portfolio" />
+    <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">↗ @cherainboow</a>
   </div>
 
   <!-- Quote -->
