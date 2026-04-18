@@ -4,9 +4,17 @@ title: "CherainboowARTs"
 permalink: /arts/
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
+@font-face {
+  font-family: 'Pagkaki';
+  src: url('/public/fonts/PAGKAKI-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --m-beige:  #E8E2D7;
   --m-rose:   #C9A9A6;
@@ -16,12 +24,13 @@ permalink: /arts/
   --m-lav:    #A89BB0;
   --m-warm:   #B5AFA8;
   --ink:      #2C2C2C;
-  /* Candy colors */
-  --candy-pink:   #FF6EB4;
-  --candy-cyan:   #3DD9DC;
-  --candy-yellow: #FFE44D;
-  --candy-mint:   #5CEFC7;
-  --candy-lav:    #C084FC;
+  /* Macaroon palette */
+  --mac-rose:   #F2B5C0;
+  --mac-mint:   #B5E8D5;
+  --mac-lemon:  #F7E8A0;
+  --mac-lav:    #C9B8E8;
+  --mac-sky:    #A8D8EA;
+  --mac-peach:  #F5C9A8;
 }
 
 .arts-page {
@@ -59,13 +68,13 @@ permalink: /arts/
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(10,10,10,0.72) 0%,
-    rgba(10,10,10,0.4) 40%,
+    rgba(10,10,10,0.78) 0%,
+    rgba(10,10,10,0.45) 42%,
     rgba(10,10,10,0.0) 65%
   ),
   linear-gradient(
     to top,
-    rgba(10,10,10,0.7) 0%,
+    rgba(10,10,10,0.75) 0%,
     rgba(10,10,10,0.1) 40%,
     transparent 70%
   );
@@ -79,29 +88,29 @@ permalink: /arts/
   z-index: 3;
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.35rem;
 }
 
 .hw {
   display: inline-block;
-  font-family: 'Pacifico', cursive;
-  line-height: 1.05;
-  padding: 0.06em 0.22em;
+  font-family: 'Pagkaki', 'Righteous', cursive;
+  line-height: 1.1;
+  padding: 0.08em 0.24em;
   position: relative;
 }
 .hw-cherainboow {
   font-size: clamp(1.8rem, 4vw, 3rem);
-  background: var(--candy-pink);
-  color: #fff;
+  background: var(--mac-rose);
+  color: #2C2C2C;
   transform: rotate(-1.5deg);
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.45);
 }
 .hw-arts {
   font-size: clamp(2.2rem, 5vw, 3.8rem);
-  background: var(--candy-cyan);
-  color: #0d0d0d;
+  background: var(--mac-mint);
+  color: #2C2C2C;
   transform: rotate(1deg);
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.45);
   margin-left: 0.15em;
 }
 .hw-sub {
@@ -118,41 +127,41 @@ permalink: /arts/
   margin-top: 0.7rem;
   display: inline-block;
   background: transparent;
-  color: var(--candy-yellow) !important;
+  color: var(--mac-lemon) !important;
   padding: 0.35rem 1rem;
   font-family: 'Righteous', sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-decoration: none;
-  border: 2px solid var(--candy-yellow);
-  box-shadow: 3px 3px 0 var(--candy-yellow);
+  border: 2px solid var(--mac-lemon);
+  box-shadow: 3px 3px 0 var(--mac-lemon);
   width: fit-content;
   transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
 }
 .arts-poster-ig:hover {
-  background: var(--candy-yellow);
-  color: #0d0d0d !important;
+  background: var(--mac-lemon);
+  color: #2C2C2C !important;
   transform: translate(-2px,-2px);
-  box-shadow: 5px 5px 0 var(--candy-yellow);
+  box-shadow: 5px 5px 0 var(--mac-lemon);
 }
 
 /* ── Quote ── */
 .arts-quote {
   border: 2.5px solid var(--ink);
-  box-shadow: 5px 5px 0 var(--candy-pink);
+  box-shadow: 5px 5px 0 var(--mac-rose);
   padding: 1.5rem 1.8rem;
   margin-bottom: 2.5rem;
   background: #0d0d0d;
 }
 .arts-quote p {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pagkaki', 'Righteous', cursive;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  line-height: 1.65;
+  line-height: 1.7;
   color: #fff;
   margin: 0 0 0.4rem;
 }
-.arts-quote p .qart { color: var(--candy-pink); }
-.arts-quote p .qsci { color: var(--candy-cyan); }
+.arts-quote p .qart { color: var(--mac-rose); }
+.arts-quote p .qsci { color: var(--mac-sky); }
 .arts-quote cite {
   font-size: 0.6rem;
   letter-spacing: 0.16em;
@@ -255,13 +264,13 @@ permalink: /arts/
   <!-- Media tags -->
   <span class="arts-section-label">— Mediums</span>
   <div class="arts-tags">
-    <span class="arts-tag" style="background:var(--candy-pink);border-color:var(--ink)">Oil Painting</span>
-    <span class="arts-tag" style="background:var(--candy-yellow);border-color:var(--ink)">Watercolour</span>
-    <span class="arts-tag" style="background:var(--candy-mint);border-color:var(--ink)">Acrylic</span>
-    <span class="arts-tag" style="background:var(--candy-cyan);border-color:var(--ink)">Procreate</span>
-    <span class="arts-tag" style="background:var(--candy-lav);border-color:var(--ink);color:#fff">Mixed Media</span>
+    <span class="arts-tag" style="background:var(--mac-rose);border-color:var(--ink)">Oil Painting</span>
+    <span class="arts-tag" style="background:var(--mac-lemon);border-color:var(--ink)">Watercolour</span>
+    <span class="arts-tag" style="background:var(--mac-mint);border-color:var(--ink)">Acrylic</span>
+    <span class="arts-tag" style="background:var(--mac-sky);border-color:var(--ink)">Procreate</span>
+    <span class="arts-tag" style="background:var(--mac-lav);border-color:var(--ink)">Mixed Media</span>
     <span class="arts-tag" style="background:var(--m-warm);border-color:var(--ink)">Charcoal</span>
-    <span class="arts-tag" style="background:var(--m-terra);border-color:var(--ink);color:#fff">Oil Pastel</span>
+    <span class="arts-tag" style="background:var(--mac-peach);border-color:var(--ink)">Oil Pastel</span>
     <span class="arts-tag" style="background:var(--m-beige);border-color:var(--ink)">Illustration</span>
   </div>
 
@@ -295,7 +304,7 @@ permalink: /arts/
   </div>
 
   <p style="text-align:center;font-family:'Righteous',sans-serif;font-size:0.72rem;letter-spacing:0.1em;color:var(--m-warm);">
-    More on <a href="https://www.instagram.com/cherainboow" target="_blank" style="color:var(--candy-pink);text-decoration:none;">@cherainboow</a>
+    More on <a href="https://www.instagram.com/cherainboow" target="_blank" style="color:var(--mac-rose);text-decoration:none;">@cherainboow</a>
   </p>
 
 </div>
