@@ -56,8 +56,7 @@ permalink: /arts/
 .arts-poster-ig {
   position: absolute;
   bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 1.5rem;
   display: inline-block;
   background: transparent;
   color: #ffffff !important;
