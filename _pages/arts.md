@@ -76,7 +76,7 @@ permalink: /arts/
 }
 .poster-portfolio {
   font-family: 'Pagkaki', cursive;
-  font-size: clamp(2.6rem, 8vw, 5.5rem);
+  font-size: clamp(3.5rem, 11vw, 7.5rem);
   color: #fff;
   margin: 0 0 0.15rem;
   line-height: 0.95;
@@ -98,18 +98,18 @@ permalink: /arts/
   padding: 0.06em 0.2em;
 }
 .hw-cherainboow {
-  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-size: clamp(1.3rem, 3.5vw, 2.4rem);
   background: var(--mac-rose);
   color: #1a1a1a;
   transform: rotate(-1deg);
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.6);
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
 }
 .hw-arts {
-  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-size: clamp(1.3rem, 3.5vw, 2.4rem);
   background: var(--mac-mint);
   color: #1a1a1a;
   transform: rotate(0.8deg);
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.6);
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
   margin-left: 0.1em;
 }
 
