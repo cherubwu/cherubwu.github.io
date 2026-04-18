@@ -17,14 +17,8 @@ permalink: /arts/
 
 :root {
   --m-beige:  #E8E2D7;
-  --m-rose:   #C9A9A6;
-  --m-sage:   #8FAF8A;
-  --m-blue:   #8BA7B8;
-  --m-terra:  #C4846A;
-  --m-lav:    #A89BB0;
   --m-warm:   #B5AFA8;
   --ink:      #2C2C2C;
-  /* Macaroon palette */
   --mac-rose:   #F2B5C0;
   --mac-mint:   #B5E8D5;
   --mac-lemon:  #F7E8A0;
@@ -33,27 +27,25 @@ permalink: /arts/
   --mac-peach:  #F5C9A8;
 }
 
+/* ── Page wrapper: full black ── */
 .arts-page {
   font-family: "PT Sans", sans-serif;
-  color: var(--ink);
+  color: #fff;
+  background: #0d0d0d;
   max-width: 900px;
   margin: 0 auto;
   padding: 0 0 4rem;
+  border: 3px solid #222;
+  box-shadow: 10px 10px 0 #111;
 }
 
 /* ── Hero ── */
 .arts-hero {
   position: relative;
   background: #0d0d0d;
-  border: 3px solid #1a1a1a;
-  border-bottom: none;
-  box-shadow: none;
-  margin-bottom: 0;
   overflow: hidden;
   min-height: 360px;
 }
-
-/* Full illustration as background */
 .arts-hero-bg {
   position: absolute;
   inset: 0;
@@ -63,63 +55,57 @@ permalink: /arts/
   object-position: center center;
 }
 
-/* Title bar below hero */
+/* ── Title area below hero ── */
 .arts-poster-bar {
   background: #0d0d0d;
-  border: 3px solid #1a1a1a;
-  border-top: none;
-  box-shadow: 8px 8px 0 #1a1a1a;
-  padding: 1.2rem 1.8rem 1.4rem;
-  margin-bottom: 2.5rem;
+  padding: 1.6rem 2rem 1.8rem;
+  border-top: 1px solid #222;
+  text-align: left;
 }
 
-.arts-poster {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
+.poster-label {
+  font-family: 'Pagkaki', cursive;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  color: var(--mac-rose);
+  margin: 0 0 0.2rem;
+  line-height: 1.1;
+}
+
+.poster-title {
+  line-height: 1;
+  margin-bottom: 0.8rem;
 }
 
 .hw {
   display: inline-block;
-  font-family: 'Pagkaki', 'Righteous', cursive;
-  line-height: 1.1;
-  padding: 0.08em 0.24em;
-  position: relative;
+  font-family: 'Pagkaki', cursive;
+  line-height: 1.05;
+  padding: 0.06em 0.2em;
 }
 .hw-cherainboow {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
   background: var(--mac-rose);
-  color: #2C2C2C;
-  transform: rotate(-1.5deg);
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.45);
+  color: #1a1a1a;
+  transform: rotate(-1deg);
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.6);
 }
 .hw-arts {
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
   background: var(--mac-mint);
-  color: #2C2C2C;
-  transform: rotate(1deg);
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.45);
-  margin-left: 0.15em;
-}
-.hw-sub {
-  font-family: 'Righteous', sans-serif;
-  font-size: clamp(0.68rem, 1.4vw, 0.9rem);
-  color: rgba(255,255,255,0.7);
-  letter-spacing: 0.06em;
-  display: block;
-  padding: 0;
-  margin-top: 0.3rem;
+  color: #1a1a1a;
+  transform: rotate(0.8deg);
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.6);
+  margin-left: 0.1em;
 }
 
 .arts-poster-ig {
-  margin-top: 0.5rem;
   display: inline-block;
   background: transparent;
   color: var(--mac-lemon) !important;
-  padding: 0.2rem 0.6rem;
+  padding: 0.18rem 0.55rem;
   font-family: 'Righteous', sans-serif;
-  font-size: 0.62rem;
-  letter-spacing: 0.07em;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
   text-decoration: none;
   border: 1.5px solid var(--mac-lemon);
   box-shadow: 2px 2px 0 var(--mac-lemon);
@@ -128,21 +114,21 @@ permalink: /arts/
 }
 .arts-poster-ig:hover {
   background: var(--mac-lemon);
-  color: #2C2C2C !important;
-  transform: translate(-2px,-2px);
-  box-shadow: 5px 5px 0 var(--mac-lemon);
+  color: #1a1a1a !important;
+  transform: translate(-1px,-1px);
+  box-shadow: 3px 3px 0 var(--mac-lemon);
 }
 
 /* ── Quote ── */
 .arts-quote {
-  border: 2.5px solid var(--ink);
-  box-shadow: 5px 5px 0 var(--mac-rose);
-  padding: 1.5rem 1.8rem;
-  margin-bottom: 2.5rem;
-  background: #0d0d0d;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding: 1.5rem 2rem;
+  margin-bottom: 0;
+  background: #111;
 }
 .arts-quote p {
-  font-family: 'Pagkaki', 'Righteous', cursive;
+  font-family: 'Pagkaki', cursive;
   font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 1.7;
   color: #fff;
@@ -151,50 +137,65 @@ permalink: /arts/
 .arts-quote p .qart { color: var(--mac-rose); }
 .arts-quote p .qsci { color: var(--mac-sky); }
 .arts-quote cite {
-  font-size: 0.6rem;
+  font-size: 0.58rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.35);
   font-family: "PT Sans", sans-serif;
 }
 
 /* ── Tags ── */
 .arts-section-label {
   display: block;
-  font-size: 0.6rem;
+  font-size: 0.58rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--m-warm);
-  margin-bottom: 1.2rem;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 1rem;
+  padding: 1.4rem 2rem 0;
 }
 .arts-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  padding: 0 2rem 1.6rem;
 }
 .arts-tag {
-  padding: 0.28rem 0.85rem;
+  padding: 0.25rem 0.8rem;
   font-family: 'Righteous', sans-serif;
-  font-size: 0.7rem;
-  border: 2px solid var(--ink);
-  color: var(--ink);
+  font-size: 0.68rem;
+  border: 2px solid rgba(255,255,255,0.15);
+  color: #1a1a1a;
   letter-spacing: 0.04em;
+}
+
+/* ── Works label ── */
+.arts-works-label {
+  display: block;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 1rem;
+  padding: 0.4rem 2rem 0;
+  border-top: 1px solid #222;
 }
 
 /* ── Grid ── */
 .arts-grid {
   columns: 2;
   column-gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
+  padding: 0 2rem 2rem;
 }
 @media (min-width: 640px) { .arts-grid { columns: 3; } }
 
 .arts-item {
   break-inside: avoid;
   margin-bottom: 1rem;
-  border: 2.5px solid var(--ink);
-  box-shadow: 5px 5px 0 var(--ink);
+  border: 2px solid #333;
+  box-shadow: 4px 4px 0 #111;
   overflow: hidden;
   background: var(--m-beige);
   display: block;
@@ -202,47 +203,63 @@ permalink: /arts/
   transition: transform 0.15s, box-shadow 0.15s;
 }
 .arts-item:hover {
-  transform: translate(-3px,-3px);
-  box-shadow: 8px 8px 0 var(--ink);
+  transform: translate(-2px,-2px);
+  box-shadow: 6px 6px 0 #000;
 }
 .arts-item img {
   width: 100%;
   display: block;
-  border-bottom: 2px solid var(--ink);
-  filter: saturate(0.72);
+  border-bottom: 1px solid #333;
+  filter: saturate(0.75);
   transition: filter 0.3s;
 }
-.arts-item:hover img { filter: saturate(1.15); }
+.arts-item:hover img { filter: saturate(1.1); }
 .arts-item-label {
-  padding: 0.45rem 0.75rem;
+  padding: 0.4rem 0.7rem;
+  font-family: 'Righteous', sans-serif;
+  font-size: 0.65rem;
+  color: #555;
+  letter-spacing: 0.05em;
+}
+
+.arts-footer-link {
+  text-align: center;
   font-family: 'Righteous', sans-serif;
   font-size: 0.68rem;
-  color: var(--m-warm);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.3);
+  padding: 0 2rem 0.5rem;
+  border-top: 1px solid #222;
+  padding-top: 1.2rem;
+}
+.arts-footer-link a {
+  color: var(--mac-rose);
+  text-decoration: none;
 }
 
 @media (max-width: 540px) {
   .arts-hero { min-height: 220px; }
-  .arts-poster-bar { padding: 1rem 1rem 1.2rem; }
+  .arts-poster-bar { padding: 1.2rem 1.2rem 1.4rem; }
+  .arts-section-label, .arts-works-label { padding-left: 1.2rem; }
+  .arts-tags, .arts-grid { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .arts-footer-link { padding-left: 1.2rem; padding-right: 1.2rem; }
 }
 </style>
 
 <div class="arts-page">
 
-  <!-- Hero: illustration only -->
+  <!-- Hero: illustration -->
   <div class="arts-hero">
     <img class="arts-hero-bg" src="/public/image/hero-arts.png" alt="Cherainboow Arts" />
   </div>
 
-  <!-- Title bar below the image -->
+  <!-- Title: creative portfolio / CherainboowARTs / @cherainboow -->
   <div class="arts-poster-bar">
-    <div class="arts-poster">
-      <div>
-        <span class="hw hw-cherainboow">Cherainboow</span>
-        <span class="hw hw-arts">ARTs</span>
-      </div>
-      <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">↗ @cherainboow</a>
+    <p class="poster-label">creative portfolio</p>
+    <div class="poster-title">
+      <span class="hw hw-cherainboow">Cherainboow</span><span class="hw hw-arts">ARTs</span>
     </div>
+    <a class="arts-poster-ig" href="https://www.instagram.com/cherainboow" target="_blank">↗ @cherainboow</a>
   </div>
 
   <!-- Quote -->
@@ -254,18 +271,18 @@ permalink: /arts/
   <!-- Media tags -->
   <span class="arts-section-label">— Mediums</span>
   <div class="arts-tags">
-    <span class="arts-tag" style="background:var(--mac-rose);border-color:var(--ink)">Oil Painting</span>
-    <span class="arts-tag" style="background:var(--mac-lemon);border-color:var(--ink)">Watercolour</span>
-    <span class="arts-tag" style="background:var(--mac-mint);border-color:var(--ink)">Acrylic</span>
-    <span class="arts-tag" style="background:var(--mac-sky);border-color:var(--ink)">Procreate</span>
-    <span class="arts-tag" style="background:var(--mac-lav);border-color:var(--ink)">Mixed Media</span>
-    <span class="arts-tag" style="background:var(--m-warm);border-color:var(--ink)">Charcoal</span>
-    <span class="arts-tag" style="background:var(--mac-peach);border-color:var(--ink)">Oil Pastel</span>
-    <span class="arts-tag" style="background:var(--m-beige);border-color:var(--ink)">Illustration</span>
+    <span class="arts-tag" style="background:var(--mac-rose)">Oil Painting</span>
+    <span class="arts-tag" style="background:var(--mac-lemon)">Watercolour</span>
+    <span class="arts-tag" style="background:var(--mac-mint)">Acrylic</span>
+    <span class="arts-tag" style="background:var(--mac-sky)">Procreate</span>
+    <span class="arts-tag" style="background:var(--mac-lav)">Mixed Media</span>
+    <span class="arts-tag" style="background:var(--m-warm)">Charcoal</span>
+    <span class="arts-tag" style="background:var(--mac-peach)">Oil Pastel</span>
+    <span class="arts-tag" style="background:var(--m-beige)">Illustration</span>
   </div>
 
   <!-- Works -->
-  <span class="arts-section-label">— Works</span>
+  <span class="arts-works-label">— Works</span>
   <div class="arts-grid">
     <a class="arts-item" href="https://www.instagram.com/cherainboow" target="_blank">
       <img src="/public/image/Oilp.JPG" alt="Oil Painting" />
@@ -293,8 +310,8 @@ permalink: /arts/
     </a>
   </div>
 
-  <p style="text-align:center;font-family:'Righteous',sans-serif;font-size:0.72rem;letter-spacing:0.1em;color:var(--m-warm);">
-    More on <a href="https://www.instagram.com/cherainboow" target="_blank" style="color:var(--mac-rose);text-decoration:none;">@cherainboow</a>
+  <p class="arts-footer-link">
+    More on <a href="https://www.instagram.com/cherainboow" target="_blank">@cherainboow</a>
   </p>
 
 </div>
