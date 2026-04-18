@@ -46,8 +46,9 @@ permalink: /arts/
   position: relative;
   background: #0d0d0d;
   border: 3px solid #1a1a1a;
-  box-shadow: 8px 8px 0 #1a1a1a;
-  margin-bottom: 2.5rem;
+  border-bottom: none;
+  box-shadow: none;
+  margin-bottom: 0;
   overflow: hidden;
   min-height: 360px;
 }
@@ -59,33 +60,20 @@ permalink: /arts/
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
 }
 
-/* Dark gradient only on left-bottom so title is readable */
-.arts-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(10,10,10,0.78) 0%,
-    rgba(10,10,10,0.45) 42%,
-    rgba(10,10,10,0.0) 65%
-  ),
-  linear-gradient(
-    to top,
-    rgba(10,10,10,0.75) 0%,
-    rgba(10,10,10,0.1) 40%,
-    transparent 70%
-  );
+/* Title bar below hero */
+.arts-poster-bar {
+  background: #0d0d0d;
+  border: 3px solid #1a1a1a;
+  border-top: none;
+  box-shadow: 8px 8px 0 #1a1a1a;
+  padding: 1.2rem 1.8rem 1.4rem;
+  margin-bottom: 2.5rem;
 }
 
-/* Title pinned to bottom-left */
 .arts-poster {
-  position: absolute;
-  bottom: 1.6rem;
-  left: 1.8rem;
-  z-index: 3;
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
@@ -234,17 +222,20 @@ permalink: /arts/
 }
 
 @media (max-width: 540px) {
-  .arts-hero { min-height: 280px; }
-  .arts-poster { bottom: 1rem; left: 1rem; }
+  .arts-hero { min-height: 220px; }
+  .arts-poster-bar { padding: 1rem 1rem 1.2rem; }
 }
 </style>
 
 <div class="arts-page">
 
-  <!-- Hero: illustration + gradient overlay + title bottom-left -->
+  <!-- Hero: illustration only, no text overlay -->
   <div class="arts-hero">
     <img class="arts-hero-bg" src="/public/image/hero-arts.png" alt="Cherainboow Arts" />
-    <div class="arts-hero-overlay"></div>
+  </div>
+
+  <!-- Title bar below the image -->
+  <div class="arts-poster-bar">
     <div class="arts-poster">
       <div>
         <span class="hw hw-cherainboow">Cherainboow</span>
