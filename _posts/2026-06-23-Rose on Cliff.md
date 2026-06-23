@@ -6,6 +6,8 @@ tags: [poetry, bilingual, 诗歌]
 ---
 
 <style>
+h1.post-title { display: none; }
+
 .poem-wrap {
   font-family: "Palatino Linotype", "Georgia", "STSong", serif;
   max-width: 780px;
